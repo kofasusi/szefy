@@ -1,0 +1,78 @@
+/*
+* Kacper Kaczmarczyk  Bartosz Dadas
+*/
+Zadanie 1.
+var pusty = {};
+Deklaracja zmiennej z użuciem const musi mieć przypisaną wartość, bo inaczej zostanie rzucony wyjątek
+Let używamy gdy wiemy, że obiekt będzie zmieniany
+Zad 2.
+Int - liczby całkowite
+Char - znaki pojedyńcze
+Byte - 8 bitów
+String - ciąg znaków
+Double - liczby zmienno-przecinkowe
+Float
+Zadanie 3.
+let isAuthorized = true;
+let isClicked = true;
+
+if (isAuthorized && isClicked) {
+    document.write("Good Job")
+}
+else {
+    document.write("oops")
+}
+Zadanie 4.
+if (isAuthorized && isClicked == false || isClicked && isAuthorized == false) {
+    document.write("Good Job")
+}
+Zadanie 5.
+const str = "To jest test";
+const ZnakPiaty = str.charAt(4);
+Zadanie 6.
+// sposób 1
+const str = "przykladowy ciag";
+const str2 = "bardziej przykladowy ciag";
+str.concat(str, str2);
+// sposób 2
+['a', 'v', 'c', 'g', 'f'].join(' ');
+
+Zadanie 7.
+var gus = 'to, jest , test'.split(", ");
+let amon = gus.filter(t => !t.startsWith('t'));
+console.log(amon);
+
+
+Zad.8
+
+console.log("1" + [0] "2" + [1] "3" + [2])
+
+zad.9
+
+9. Klasy wprowadzają znacznie prostszą i bardziej czytelną składnię do tworzenia obiektów i dziedziczenia.
+ class UserPersonalInfo {
+        constructor(name, age, number) {
+        this.name = name
+        this.age = age
+        this.number = number
+    }
+10. Konstruktory - specjalne metody, które pomagają przy tworzeniu obiektów. Konstruktor umożliwia zdefiniowanie inicjalizacji obiektu, która musi się wykonać, zanim będzie można wywołać metody obiektu.
+11. Słowo kluczowe static definiuje statyczną metodę lub właściwość klasy. Statyczne metody to często funkcje służące na przykład do tworzenia czy klonowania obiektów, a statyczne właściwości są użyteczne do cache'ów, stałej konfiguracji lub innych właściwości, które nie muszą być powielane w instancjach
+        static newInfo(){
+            return new this();
+        }
+    }
+        UserPersonalInfo.newInfo();
+12. Klienci wysyłają żądania. Każde żądanie powiązane jest z zasobem. Zasobem może być obrazek, strona HTML czy plik z kodem JavaScript. Sam protokół HTTP nie określa czym dokładnie jest zasób. Określa jedynie sposób w jaki można dostać się do zasobów. Każdy zasób ma swój unikalny identyfikator. Protokół HTTP dokładnie określa format komunikacji pomiędzy klientami i serwerami. Komunikacja ta oparta jest na wspomnianych już żądaniach i odpowiedziach. Protokół HTTP określa format tych wiadomości.
+W momencie potwierdzania wpisanego adresu jest używana metoda GET. (GET / HTTP/1.1)
+Delete – usun
+Post – utworz nowy rekord
+Patch – aktualizacja/modyfikacja
+
+
+
+
+
+
+
+
